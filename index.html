@@ -12,12 +12,23 @@
   <header class="header header--home">
 
     <!-- Menu principal -->
-    <button class="burger" type="button" aria-label="Menu">
+    <button
+    class="menu__close burger burger--close"
+    type="button" 
+    popovertarget="menu" 
+    
+    aria-label="Close the menu"
+    >
+
       🍔
     </button>
 
-    <nav class="menu" aria-label="Main menu">
-      <button class="menu__close burger burger--close" type="button" aria-label="Close the menu">
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu__close 
+      burger burger--close" 
+      type="button"  
+      popovertarget="menu"
+      popovertargetaction="hide" aria-label="Close the menu">
         🍔
       </button>
       <ul class="menu__list">
@@ -40,6 +51,4 @@
   </main>
   <!-- Fin du contenu principal -->
 
-</body>
-
-</html>
+</body
