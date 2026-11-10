@@ -22,13 +22,20 @@
 
       🍔
     </button>
-
+     <!-- Je déclare le menu comme popover -->
     <nav class="menu" id="menu" popover aria-label="Main menu">
+     <!-- lorce que je reclique sur le bouton, Échap ou bien en dehors, il se referme-->
+      <!-- en rajoutent popovertargetaction lorce que je reclique sur le bouton du menu ouvert-->
+       <!-- en rajoutent autofocus cela me permet de que tape sur une aure touche le menue ce ferme-->
       <button class="menu__close 
       burger burger--close" 
       type="button"  
       popovertarget="menu"
-      popovertargetaction="hide" aria-label="Close the menu">
+      popovertargetaction="hide" 
+      aria-label="Close the menu"
+      autofocus
+      
+      >
         🍔
       </button>
       <ul class="menu__list">
